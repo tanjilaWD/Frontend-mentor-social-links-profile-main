@@ -1,0 +1,94 @@
+:root{
+    --primaryFront:"Inter", sans-serif;
+
+    --greenColor: hsl(75, 94%, 57%);
+    --whiteColor: hsl(0, 0%, 100%);
+    
+    --greyColor700: hsl(0, 0%, 20%);
+    --greyColor800: hsl(0, 0%, 12%);
+    --greyColor900: hsl(0, 0%, 8%);
+}
+
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: var(--primaryFront);
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--greyColor900);
+    flex-wrap: wrap;
+    font-family: var(--primaryFront);
+}
+
+main{
+    background-color: var(--greyColor800);
+    border: 0px solid black;
+    width: 387px;
+    height: 612px;
+    border-radius: 13px;
+    padding:34px ;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    align-items: center;
+
+}
+
+main img{
+    border-radius: 100%;
+    width: 95px;
+    margin-bottom: 10px;
+}
+
+main h2{
+    color: var(--whiteColor);
+    font-size: 22px;
+    font-weight: 600;
+
+}
+
+main h5{
+    color: var(--greenColor);
+    font-size: 12px;
+    font-weight:600;
+
+}
+
+main p{
+    color: var(--whiteColor);
+    font-weight: 400;
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+button{
+    color: var(--whiteColor);
+    font-weight: 700;
+    background: var(--greyColor700);
+    padding: 1rem;
+    width: 100%;
+    border: 0px solid black;
+    border-radius: 8px;
+
+}
+
+button:hover{
+    background: var(--greenColor);
+    color: var(--greyColor900);
+}
+
+@media screen and (max-width: 425px) {
+    body #main {
+      width: 90%;
+    }
+    body #main .link {
+      width: 90%;
+    }
+}
